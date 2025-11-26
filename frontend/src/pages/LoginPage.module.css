@@ -1,0 +1,109 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/src/assets/the-club.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.loginCard {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e0e0e0;
+}
+
+.header {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  margin: 6px 0 4px;
+}
+
+.subtitle {
+  color: #5a6b6a;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #ecf5ff;
+  color: #2c3e50;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fdd;
+  border: 1px solid #f5b7b1;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #3498db;
+  text-decoration: none;
+}

@@ -1,0 +1,147 @@
+/* frontend/src/components/LibroVisitas.module.css */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 18px;
+  color: #f6f7f2;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: rgba(12, 20, 15, 0.78);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+  backdrop-filter: blur(2px);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #f0c36f;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d9e0d7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  color: #f6f7f2;
+  font-weight: 600;
+}
+
+.input, .textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccd5cb;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #0f1f14;
+  color: #e8f1e7;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #e0ad35;
+  color: #0b140d;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 700;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.messageBox {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(224,173,53,0.16);
+  color: #f6f0e5;
+  border: 1px solid rgba(224,173,53,0.3);
+}
+
+.entriesTitle {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #f0c36f;
+}
+
+.entriesListUl {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.entryItem {
+  background: radial-gradient(circle at 20% 20%, rgba(240,195,111,0.14), transparent 38%), rgba(22, 24, 18, 0.92);
+  color: #f5f2e9;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.28);
+  border: 1px solid rgba(240,195,111,0.35);
+}
+
+.entryItem strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #f8d48a;
+}
+
+.entryItem p {
+  margin: 0.35rem 0 0;
+  line-height: 1.5;
+}
+
+.noEntries {
+  text-align: center;
+  color: #c8d8c6;
+  font-style: italic;
+}
+
+.entryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.deleteButton {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #d9534f, #c0392b);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.deleteButton:hover {
+  opacity: 0.92;
+}

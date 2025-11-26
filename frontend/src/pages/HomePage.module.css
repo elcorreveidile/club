@@ -1,0 +1,175 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(0,0,0,0.7)), url('/src/assets/the-club.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #e8f1e7;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.hero {
+  padding: 60px 20px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.heroContent {
+  max-width: 760px;
+  margin: 0 auto;
+  background: rgba(15, 31, 20, 0.8);
+  border: 1px solid rgba(224,173,53,0.25);
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.logo {
+  height: 96px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #9fbc9d;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 36px;
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #c8d8c6;
+  margin: 0 0 20px;
+}
+
+.ctaGroup {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary,
+.ctaSecondary,
+.link {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.ctaPrimary {
+  background: #e0ad35;
+  color: #0f1f14;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-2px);
+}
+
+.ctaSecondary {
+  border: 1px solid #e0ad35;
+  color: #e0ad35;
+}
+
+.ctaSecondary:hover {
+  background: rgba(224,173,53,0.1);
+  transform: translateY(-2px);
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 0 20px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  background: #1b2e22;
+  border: 1px solid rgba(224,173,53,0.2);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #e9d8a6;
+}
+
+.card p {
+  margin: 0 0 12px;
+  color: #c8d8c6;
+}
+
+.link {
+  border: 1px solid #e0ad35;
+  color: #e0ad35;
+}
+
+.link:hover {
+  background: rgba(224,173,53,0.1);
+  transform: translateY(-2px);
+}
+
+.cardWithImage {
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.65));
+  padding: 16px;
+  border-radius: 12px;
+  color: #f2f2f2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardWithImage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 16px 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .sections {
+    padding: 0 16px 30px;
+  }
+  .card {
+    padding: 16px;
+  }
+  .logo {
+    height: 72px;
+  }
+}

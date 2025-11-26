@@ -1,0 +1,164 @@
+/* frontend/src/components/BuzonSugerencias.module.css */
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  color: #f6f4ec;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: rgba(12, 16, 12, 0.78);
+  border: 1px solid rgba(240,195,111,0.18);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 22px 45px rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #e0ad35;
+  margin: 0;
+}
+
+.title {
+  color: #f8f8f8;
+  text-align: center;
+  margin: 4px 0;
+}
+
+.description {
+  text-align: center;
+  color: #d6e0d2;
+  margin: 0 0 12px;
+}
+
+.card {
+  background: linear-gradient(145deg, rgba(26, 26, 20, 0.88), rgba(14, 18, 14, 0.9));
+  border: 1px solid rgba(240,195,111,0.22);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32);
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(240,195,111,0.3);
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(10, 14, 10, 0.92);
+  color: #f6f4ec;
+}
+
+.input:focus, .textarea:focus {
+  outline: 2px solid rgba(240,195,111,0.6);
+  border-color: rgba(240,195,111,0.6);
+  box-shadow: 0 0 0 4px rgba(240,195,111,0.12);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button {
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(135deg, #e0ad35, #c8931c);
+  color: #0f1f14;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.messageBox {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(240,195,111,0.14);
+  color: #f8f2df;
+  border: 1px solid rgba(240,195,111,0.28);
+}
+
+.subtitle {
+  margin: 0 0 6px;
+  color: #f2e9d0;
+}
+
+.muted {
+  margin: 0;
+  color: #cfd8cd;
+}
+
+.mapWrapper {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adminList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adminItem {
+  padding: 12px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 20% 20%, rgba(240,195,111,0.16), transparent 45%), rgba(18,20,16,0.92);
+  border: 1px solid rgba(240,195,111,0.26);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.32);
+}
+
+.adminTitle {
+  font-weight: 700;
+  color: #f2e9d0;
+  margin: 6px 0;
+}
+
+.adminText {
+  margin: 0;
+  color: #d6e0d2;
+  white-space: pre-wrap;
+}
